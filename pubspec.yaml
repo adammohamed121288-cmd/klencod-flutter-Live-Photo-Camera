@@ -1,2 +1,26 @@
-camera: ^0.11.2+1
-gal: ^2.3.0
+
+name: live_photo_camera
+description: Professional iPhone Style Live Photo Camera App
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.13.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  camera: ^0.11.2+1
+  gal: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
