@@ -1,23 +1,36 @@
-
-name: live_photo_camera
-description: iPhone style Live Photo camera app
+name: live_photo_app
+description: "A Flutter Live Photo camera app inspired by iOS"
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.0 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  camera: ^0.11.2+1
-  gal: ^2.3.0
+  camera: ^0.10.5+9
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  video_player: ^2.8.2
+  cupertino_icons: ^1.0.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+# إعدادات أيقونة التطبيق التلقائية (اختياري)
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  remove_alpha_ios: true
 
 flutter:
   uses-material-design: true
+
+  # أضف مسار الأيقونات لو أردت استخدامها لاحقاً
+  # assets:
+  #   - assets/icon/
